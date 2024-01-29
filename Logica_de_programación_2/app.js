@@ -9,8 +9,14 @@ function asignarTextoElemento(elemento,texto) {
 
 }
 
-function intentoDeUsuario(){
-    alert('Click desde el boton');
+function verificarIntento(){
+    let numeroUsuario = parseInt(document.getElementById('valorUsuario').value);
+    console.log('tipo de dato numero usuario:' ,typeof(numeroUsuario));
+    console.log('tipo de dato numero secereto:' ,typeof(numeroSecreto));
+    console.log(numeroUsuario);
+    console.log('Numero secreto: ', numeroSecreto);
+    console.log('Comparacion de numeros :', numeroSecreto == numeroUsuario);
+
 } 
 
 function generarNumeroSecreto() {
